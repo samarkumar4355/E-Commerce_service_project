@@ -1,13 +1,10 @@
-const express =require('express');
+const express = require('express');
 const app = express();
-const bodyParser = require('body-parser');
 const cors = require('cors');
-const mongoose = require('mongoose');
 const products = require('./data.js');
 
-
 app.use(cors());
-app.use(bodyParser.json());
+app.use(express.json());
 
 app.get('/', (req, res) => {
     res.send('Welcome to the API');
