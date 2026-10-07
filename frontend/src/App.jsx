@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import ProductList from './ProductList';
 
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3000/api/products';
+const API_URL = import.meta.env.VITE_API_URL ;
 
 function App() {
   const [products, setProducts] = useState([]);
